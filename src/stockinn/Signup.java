@@ -19,6 +19,8 @@ public class Signup extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         Signup_button = new javax.swing.JButton();
@@ -32,26 +34,61 @@ public class Signup extends javax.swing.JFrame {
         business_name_textfield = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
         jConPasswordField2 = new javax.swing.JPasswordField();
+        jPanel5 = new javax.swing.JPanel();
+        sigup_bg = new javax.swing.JLabel();
 
         jButton3.setText("jButton3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(117, 53, 147));
-        setPreferredSize(new java.awt.Dimension(900, 600));
+        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
+        getContentPane().setLayout(null);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(1433, 81, 0, 0);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 870, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(463, 6, 870, 0);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 436, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(463, 0, 436, 0);
 
         jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(0, 0, 0)));
+        jPanel4.setOpaque(false);
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setBackground(new java.awt.Color(153, 153, 153));
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 30)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("   ..SignUp 😊..");
-        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 10));
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 51, 240, -1));
+        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 10));
+        jLabel4.setOpaque(true);
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 240, -1));
 
         Signup_button.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         Signup_button.setText("SignUp");
@@ -68,11 +105,6 @@ public class Signup extends javax.swing.JFrame {
         S_to_L_label.setText("Already have an account? Login");
         S_to_L_label.setBorder(null);
         S_to_L_label.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        S_to_L_label.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
-            }
-        });
         S_to_L_label.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 S_to_L_labelActionPerformed(evt);
@@ -84,6 +116,7 @@ public class Signup extends javax.swing.JFrame {
         ShowP_checkbox.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         ShowP_checkbox.setText("Show Password");
         ShowP_checkbox.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
+        ShowP_checkbox.setOpaque(true);
         ShowP_checkbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ShowP_checkboxActionPerformed(evt);
@@ -123,54 +156,33 @@ public class Signup extends javax.swing.JFrame {
         jConPasswordField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         jPanel4.add(jConPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 267, 233, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 416, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(200, 10, 440, 530);
+
+        sigup_bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/signup_bg.png"))); // NOI18N
+        sigup_bg.setText("jLabel1");
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sigup_bg, javax.swing.GroupLayout.PREFERRED_SIZE, 850, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 534, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sigup_bg, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel5);
+        jPanel5.setBounds(0, 0, 850, 600);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ShowP_checkboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowP_checkboxActionPerformed
-        // TODO add your handling code here:
-        if (ShowP_checkbox.isSelected()) {
-            // Show password
-            jPasswordField1.setEchoChar((char) 0);
-            jConPasswordField2.setEchoChar((char) 0);
-        } else {
-            // Hide password
-            jPasswordField1.setEchoChar('•');
-            jConPasswordField2.setEchoChar('•');
-        }
-    }//GEN-LAST:event_ShowP_checkboxActionPerformed
 
-    private void S_to_L_labelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S_to_L_labelActionPerformed
-        // TODO add your handling code here:
-        Login Login = new Login();
-        Login.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_S_to_L_labelActionPerformed
-
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseClicked
-
+       
     private void Signup_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Signup_buttonActionPerformed
-        // TODO add your handling code here: String username = UsernameTextField.getText();
+        // TODO add your handling code here:
         String username = UsernameTextField.getText(); // Assuming jTextField1 is where the username is entered
         String businessName = business_name_textfield.getText(); // Assuming business_name_tesxtfield is the correct field name for business name
         String password = new String(jPasswordField1.getPassword()); // Convert JPasswordField to String
@@ -191,7 +203,7 @@ public class Signup extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Password must be at least 8 characters long!");
             return;
         }
-
+        
         // Establish a connection to the database
         Connection conn = connectDatabase();
         if (conn != null) {
@@ -253,6 +265,28 @@ public class Signup extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Signup_buttonActionPerformed
 
+    private void ShowP_checkboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowP_checkboxActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+        if (ShowP_checkbox.isSelected()) {
+            // Show password
+            jPasswordField1.setEchoChar((char) 0);
+            jConPasswordField2.setEchoChar((char) 0);
+        } else {
+            // Hide password
+            jPasswordField1.setEchoChar('•');
+            jConPasswordField2.setEchoChar('•');
+        }
+    }//GEN-LAST:event_ShowP_checkboxActionPerformed
+
+    private void S_to_L_labelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_S_to_L_labelActionPerformed
+        // TODO add your handling code here:
+        Login Login = new Login();
+        Login.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_S_to_L_labelActionPerformed
+
     private Connection connectDatabase() {
         Connection conn = null;
         try {
@@ -293,8 +327,12 @@ public class Signup extends javax.swing.JFrame {
     private javax.swing.JPasswordField jConPasswordField2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JLabel password_label;
+    private javax.swing.JLabel sigup_bg;
     // End of variables declaration//GEN-END:variables
 }
